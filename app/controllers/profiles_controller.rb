@@ -18,7 +18,7 @@ class ProfilesController < ApplicationController
     
     private
     def profile_params
-        flash[:success] = "Profiel Updated!"
+        flash[:success] = "Profile Updated!"
         params.require(:profile).permit(:first_name, :last_name, :job_title, :phone_number, :contact_email, :description)
     end
 end
